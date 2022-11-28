@@ -1,10 +1,10 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
     name: "NotificationBannerSwift",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v14)
     ],
     products: [
         .library(name: "NotificationBannerSwift", targets: ["NotificationBannerSwift"])
@@ -19,6 +19,5 @@ let package = Package(
             dependencies: [.byName(name: "MarqueeLabel"), .byName(name: "SnapKit")],
             path: "NotificationBanner/Classes"
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )

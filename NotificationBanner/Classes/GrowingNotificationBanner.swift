@@ -203,6 +203,7 @@ public extension GrowingNotificationBanner {
         
         if let cornerRadius = cornerRadius {
             contentView.layer.cornerRadius = cornerRadius
+            contentView.layer.cornerCurve = .continuous
         }
         
         if let titleFont = titleFont {

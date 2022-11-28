@@ -108,7 +108,9 @@ open class FloatingNotificationBanner: GrowingNotificationBanner {
         
         if let cornerRadius = cornerRadius {
             contentView.layer.cornerRadius = cornerRadius
+            contentView.layer.cornerCurve = .continuous
             contentView.subviews.last?.layer.cornerRadius = cornerRadius
+            contentView.subviews.last?.layer.cornerCurve = .continuous
         }
         
         if style == .customView, let customView = contentView.subviews.last {
